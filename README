@@ -1,0 +1,3 @@
+Fable is a layout of a story telling website written in Node.js using the Jade tempting engine.
+
+To run the code you have to have Mongod running in the background.
