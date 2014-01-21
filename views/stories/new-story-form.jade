@@ -1,0 +1,12 @@
+div#new-story-wrapper
+    form#new-story-form(action='/stories/submit', method='post', enctype='multipart/form-data')
+        div#inner-story-wrapper
+            input(type='hidden', name='reminderFrom', value='#{story._id}')
+            input.story-title(type='text', name='title', placeholder='Title')
+            div.author-wrapper
+                img.author.profile-picture-square(src='http://graph.facebook.com/#{user.oauthId}/picture?type=square')
+                div.author by #{user.name}
+            hr
+            textarea.story-body(name='body', placeholder='Your story...')
+            input(type='file', name='illustration')
+            input(type='Submit', value='Save story')

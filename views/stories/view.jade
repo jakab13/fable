@@ -1,0 +1,34 @@
+extends ../layout
+
+block content
+  link(rel='stylesheet', href='/stylesheets/stories/story.css')
+  div#main-document
+      div#original-story-document
+          div.story-title Original Story man
+      div#story-document
+          div#story-wrapper
+            div#inner-story-wrapper
+              div.story-title#story-title #{story.title}
+                  div.author-wrapper
+                    a(href='/users/#{author.id}')
+                        img.author.profile-picture-square(src='http://graph.facebook.com/#{author.oauthId}/picture?type=square')
+                        div.author #{author.name}
+              hr
+              div.story-body#story-body #{story.body}
+              img.illustration(src='#{story.illustrationPath}')
+            div.story-meta-data
+                a#vote(href='#')
+                    div.vote.meta-object Vote
+                a(href='#')
+                    div.comments.meta-object Comments
+                div#vote-count
+      div#recommendations-document
+        div#recommendations
+            div.btn.rmo-btn#rmo-btn + reminds me of...
+            div
+                include new-story-form
+            each reminder in reminders
+                div #{reminder.title} by #{reminder.authorName}
+                div #{reminder.body}
+                    img.illustration(src='#{reminder.illustrationPath}')
+  script(src='../javascripts/stories/view.js')

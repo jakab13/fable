@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    include includes/libraries
+  body
+    div
+        div#navbar
+            a(href='/'): div.nav-item#nav-home Home
+            a(href='/stories'): div.nav-item#nav-stories Stories
+            a(href='/stories/new'): div.nav-item#nav-new Create new story
+            a(href="/auth/facebook"): div.nav-item#nav-login Login via Facebook
+block content

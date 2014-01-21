@@ -1,0 +1,152 @@
+#main-document {
+    margin-top: 20px;
+}
+
+#original-story-document {
+    float: left;
+    width: 15%;
+    margin-left: 5%;
+}
+
+.illustration {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    display: block;
+    margin: 0 auto;
+}
+
+.story-title, .story-body{
+    display: block;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 7px;
+    margin-bottom: 5px;
+    /*border: solid;*/
+    /*border-color: rgba(100,100,100,0.1);*/
+}
+
+#inner-story-wrapper {
+    padding: 4px;
+    border: solid;
+    border-width: 5px;
+    border-color: rgba(100,100,100,0.1);
+    border-radius: 2px;
+
+}
+
+#story-document {
+    float: left;
+    width: 35%;
+    margin-left: 3%;
+}
+
+#story-wrapper, #new-story-wrapper {
+    display: block;
+    border-radius: 2px;
+}
+
+.story-title, .ui-accordion-header {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.story-body {
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.rmo-btn:hover {
+    background: #154890;
+}
+
+.meta-object {
+    display: inline-block;
+    font-size: 10px;
+    padding: 4px;
+}
+
+.story-meta-data {
+    display: block;
+}
+
+.author {
+    display: block;
+    font-size: 10px;
+
+}
+.author-wrapper {
+    display: inline-block;
+    float: right;
+}
+
+a .author {
+    font-weight: normal;
+}
+
+.profile-picture-square {
+    height: 20px;
+}
+
+#recommendations-document {
+    width: 35%;
+    float: left;
+    margin-left: 1%;
+}
+
+#recommendations .ui-accordion-content {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+#recommendations .ui-state-active, .ui-state-default {
+    background: none;
+}
+
+.rmo-btn {
+    background: #336699;
+    padding: 5px;
+    /*width: 500px;*/
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+input[type="text"], textarea {
+    background: none;
+    border: solid;
+    border-color: rgba(0,0,0,0);
+    border-width: 2px;
+    /*font-family: inherit;*/
+    font: inherit;
+}
+
+textarea {
+    height: 300px;
+    width: 95%;
+    font-size: 12pt;
+}
+
+input[type="text"] {
+    font-size: 16pt;
+    width: 95%;
+}
+
+input[type='text']:focus, textarea:focus{
+    border-color: rgba(100,100,100,0.1);
+    outline: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: rgba(100,100,100,0.1);
+    background-image: -webkit-linear-gradient(left, #ddd, #ccc, #ddd);
+    background-image:    -moz-linear-gradient(left, #ddd, #ccc, #ddd);
+    background-image:     -ms-linear-gradient(left, #ddd, #ccc, #ddd);
+    background-image:      -o-linear-gradient(left, #ddd, #ccc, #ddd);
+}

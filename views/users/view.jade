@@ -1,0 +1,8 @@
+extends ../layout
+
+block content
+    h1= user.name
+    each story in stories
+        #intro-wrapper
+            a(href='/stories/#{story._id}') #{story.title} by
+            a(href='/users/#{user._id}')  #{user.name}
